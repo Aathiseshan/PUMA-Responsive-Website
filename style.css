@@ -1,0 +1,2263 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav1 {
+  height: 44px;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(43, 43, 43);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Noto Sans", sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+}
+.nav2 {
+  height: 80px;
+  width: 100%;
+  background-color: #181818;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.logo {
+  margin-left: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.logo img {
+  height: 28px;
+}
+
+.navbar {
+  height: auto;
+  width: 715px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 80px;
+  transition: 0.5s;
+}
+.navbar:hover {
+  a {
+    color: #585858;
+  }
+}
+.navbar a {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.navbar a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.navbar a::after {
+  content: "";
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid rgb(124, 47, 47);
+  padding-bottom: 5px;
+
+  opacity: 0;
+}
+.navbar a:hover:after {
+  opacity: 100%;
+}
+
+.search {
+  width: 135px;
+  position: absolute;
+  right: 197px;
+  padding: 10px 25px;
+  border-radius: 2px;
+  border: 1px solid rgb(121, 121, 121);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.search:hover {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+i {
+  color: white;
+  font-size: 14px;
+}
+
+.searchpara {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.icon {
+  position: absolute;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: auto;
+  width: 153px;
+}
+.icon img {
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+#menu {
+  font-size: 16px;
+  padding: 13px;
+  border-radius: 50%;
+  transition: 0.5s;
+  display: none;
+}
+.icon img:hover {
+  background-color: rgb(75, 75, 75);
+}
+#menu:hover {
+  background-color: rgb(75, 75, 75);
+}
+
+.image1 {
+  padding: 0 100px;
+  height: 80%;
+  width: 100%;
+  background-image: url(pic1.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+}
+.para1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  color: white;
+}
+.dtop {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.btn {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+button {
+  padding: 10px 15px;
+  margin-top: 20px;
+  font-weight: 700;
+  font-style: bolder;
+  cursor: pointer;
+  background-color: white;
+  border-style: none;
+}
+
+.image2 {
+  height: 62%;
+  width: 100%;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.j1 {
+  padding-bottom: 20px;
+  font-size: 50px;
+}
+.j2 {
+  padding-bottom: 20px;
+  font-size: 35px;
+}
+.j3 {
+  padding-top: 20px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.image3 {
+  padding: 0 100px;
+  height: 80%;
+  width: 100%;
+  background-image: url(pic2.webp);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.para2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  color: white;
+}
+.image4 {
+  height: 80%;
+
+  width: 100%;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 50px;
+}
+.rshoe {
+  padding-left: 20px;
+  height:475px;
+  width: 100vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+  overflow: scroll;
+  
+}
+
+.shoe {
+  margin-right: 20px;
+}
+.shoe3 {
+  margin-right: 15px;
+}
+.sh {
+  height: 300px;
+}
+
+.pp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image5 {
+  height: 80%;
+  width: 100%;
+  background-image: url(pic3.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 150px;
+}
+
+.para4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  color: white;
+
+}
+.im5 {
+  padding-bottom: 20px;
+}
+.btn1 {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.image6 {
+  padding: 0 100px;
+  height: 80%;
+  width: 100%;
+  background-image: url(pic4.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.k1 {
+  padding-bottom: 20px;
+}
+.k2 {
+  padding-bottom: 10px;
+}
+.k3 {
+  padding-bottom: 20px;
+}
+
+.para6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  color: white;
+}
+.image7 {
+  position: relative;
+  padding: 0 100px;
+  height: 80%;
+  width: 100%;
+  background-image: url(pic5.webp);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.image8 {
+  height: 80%;
+
+  width: 100%;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.rshoe {
+  padding-left: 20px;
+  height:475px;
+  width: 100vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+  overflow: scroll;
+  
+}
+
+.sh {
+  height: 300px;
+}
+.shoe {
+  margin-right: 20px;
+}
+.shoe3 {
+  margin-right: 15px;
+}
+
+.pp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.image10 {
+  height: 475px;
+  width: 100%;
+  background-image: url(pic4.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 200px;
+  margin-bottom: 30px;
+}
+.para10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.v1 {
+  font-size: 28px;
+  padding-bottom: 20px;
+}
+.v2 {
+  font-size: 22px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.image9 {
+  height: 80%;
+
+  width: 100%;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 100px;
+}
+.rshoe {
+  padding-left: 20px;
+  height:475px;
+  width: 100vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+  overflow: scroll;
+
+  
+}
+
+.sh {
+  height: 300px;
+}
+.shoe {
+  margin-top: 20px;
+
+  position: relative;
+
+}
+
+
+.pp {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 20px 0;
+
+}
+
+
+
+
+
+
+.footer {
+  height: 80%;
+  width: 100%;
+  background-color: #181818;
+ 
+}
+
+.fb {
+  height: 70%;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  text-decoration: none;
+  padding-right: 100px;
+  font-family: "Noto Sans", sans-serif;
+}
+.f1 {
+  width: 100%;
+  margin-top: 50px;
+}
+.f1.a {
+  margin-left: 60px;
+}
+.med {
+  display: none;
+}
+.f1.aaaa {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+  padding: 5px 0;
+  font-weight: 300;
+  color: #b1b1b1;
+  cursor: pointer;
+}
+li:hover {
+  color: white;
+}
+
+li h3 {
+  color: white;
+  font-size: 20px;
+}
+
+#nn {
+  transition: 0.5s;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+}
+#nn:hover {
+  background-color: #7e7e7e;
+}
+#nb {
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin-left: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#nb:hover {
+  border: 1px solid white;
+}
+#india {
+  border-radius: 3px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+#india1 {
+  display: none;
+}
+#india:hover {
+  border: 1px solid white;
+}
+.oo {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+.ooo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: rgb(173, 173, 173);
+  font-size: 12px;
+}
+
+@media (max-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .nav1 {
+    height: 44px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(43, 43, 43);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Noto Sans", sans-serif;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 500;
+  }
+  .nav2 {
+    height: 80px;
+    width: 100%;
+    background-color: #181818;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    font-family: "Noto Sans", sans-serif;
+  }
+
+  .logo {
+    margin-left: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .logo img {
+    height: 28px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .search {
+    width: 135px;
+    position: absolute;
+    left: 20px;
+    padding: 10px 25px;
+    border-radius: 2px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .search:hover {
+    border: none;
+  }
+
+  i {
+    color: white;
+    font-size: 14px;
+  }
+
+  .searchpara {
+    display: none;
+  }
+
+  .icon {
+    position: absolute;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    width: 153px;
+  }
+  #he {
+    display: none;
+  }
+  .icon img {
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+  #menu {
+    font-size: 16px;
+    padding: 13px;
+    border-radius: 50%;
+    transition: 0.5s;
+    display: block;
+    margin-left: 20px;
+  }
+  #menu1 {
+    font-size: 16px;
+    padding: 13px;
+    border-radius: 50%;
+    transition: 0.5s;
+    display: block;
+    margin-left: 20px;
+  }
+  .icon img:hover {
+    background-color: rgb(75, 75, 75);
+  }
+  #menu:hover {
+    background-color: rgb(75, 75, 75);
+  }
+  #menu1:hover {
+    background-color: rgb(75, 75, 75);
+  }
+
+  .image1 {
+    height: 375px;
+    background-image: url(pic1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .para1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    margin: -60px;
+    color: white;
+  }
+  .dtop {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .btn {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  button {
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-weight: 700;
+    font-style: bolder;
+    cursor: pointer;
+    background-color: white;
+    border-style: none;
+  }
+
+  .image2 {
+    height: 375px;
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .j1 {
+    padding-bottom: 20px;
+    font-size: 40px;
+  }
+  .j2 {
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+  .j3 {
+    padding-top: 20px;
+    height: 120px;
+    cursor: pointer;
+  }
+
+  .image3 {
+    padding: 0 100px;
+    height: 375px;
+    width: 100%;
+    background-image: url(pic2.webp);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .para2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    color: white;
+    margin: -60px;
+  }
+  .image4 {
+    height: 475px;
+  
+    width: 100%;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-bottom: 50px;
+  }
+  .rshoe {
+    padding-left: 20px;
+    height:475px;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    overflow: scroll;
+    
+  }
+  .sh {
+    height: 250px;
+  }
+
+  .shoe {
+    margin-right: 20px;
+  }
+  .pp {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  .image5 {
+    padding: 0 100px;
+    height: 375px;
+    width: 100%;
+    background-image: url(pic3.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .para4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    color: white;
+  }
+  .im5 {
+    padding-bottom: 20px;
+  }
+  .btn1 {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .image6 {
+    height: 450px;
+    width: 100%;
+    background-image: url(pic4.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 50px;
+  }
+  .para6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    color: white;
+  }
+  .image7 {
+    position: relative;
+    padding: 0 100px;
+    height: 475px;
+    width: 100%;
+    background-image: url(pic5.webp);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .image8 {
+    height: 475px;
+  
+    width: 100%;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-bottom: 50px;
+  }
+  .rshoe {
+    padding-left: 20px;
+    height:475px;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    overflow: scroll;
+    
+  }
+  .sh {
+    height: 250px;
+  }
+
+  .shoe {
+    margin-right: 20px;
+  }
+  .pp {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  .image10 {
+    height: 475px;
+    width: 100%;
+    background-image: url(pic4.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 120px;
+  }
+  .para10 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+
+  .v1 {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+  .v2 {
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+
+  .image9 {
+    height: 475px;
+  
+    width: 100%;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  .rshoe {
+    padding-left: 20px;
+    height:425px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    overflow: scroll;
+  
+    
+  }
+  
+  .sh {
+    height: 250px;
+  }
+  .shoe {
+    margin-top: 20px;
+
+    position: relative;
+  
+  }
+ 
+  
+  .pp {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+
+  .footer {
+    height: 600px;
+    width: 100%;
+    background-color: #181818;
+    margin-top: 80px;
+    font-family: "Noto Sans", sans-serif;
+  }
+
+  .fb {
+    height: 60%;
+    width: 100%;
+    color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    text-decoration: none;
+    padding-right: 100px;
+  }
+  .med {
+    width: 100%;
+    /* height: 400px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 20px 0;
+  }
+  h3 {
+    color: white;
+  }
+  .med div {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .med1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+    cursor: pointer;
+  }
+  .f1 {
+    width: 100%;
+    margin-top: 50px;
+  }
+  #nn {
+    display: none;
+  }
+  #nb {
+    display: none;
+  }
+  .f1.a {
+    margin-left: 60px;
+  }
+  .f1.aaaa {
+    display: flex;
+  }
+  .ll {
+    display: none;
+  }
+
+  li {
+    list-style: none;
+    padding: 5px 0;
+    font-weight: 300;
+    color: #b1b1b1;
+    cursor: pointer;
+  }
+  li:hover {
+    color: white;
+  }
+
+  li h3 {
+    color: white;
+    font-size: 20px;
+  }
+
+  #nn {
+    transition: 0.5s;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+  }
+  #nn:hover {
+    background-color: #7e7e7e;
+  }
+  #nb {
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-left: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  #nb:hover {
+    border: 1px solid white;
+  }
+  .id {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #india1 {
+    display: block;
+    border-radius: 3px;
+    border: 1px solid grey;
+    padding: 0 35%;
+    cursor: pointer;
+  }
+
+  #india {
+    display: none;
+  }
+  #india:hover {
+    border: 1px solid white;
+  }
+}
+
+@media (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .nav1 {
+    height: 44px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(43, 43, 43);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Noto Sans", sans-serif;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 500;
+  }
+  .nav2 {
+    height: 80px;
+    width: 100%;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: "Noto Sans", sans-serif;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .logo img {
+    height: 30px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .search {
+    width: 135px;
+    position: absolute;
+    left: 0px;
+    padding: 1px 2px;
+    border-radius: 2px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .search:hover {
+    border: none;
+  }
+
+  i {
+    color: white;
+    font-size: 14px;
+  }
+
+  .searchpara {
+    display: none;
+  }
+
+  .icon {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    width: 153px;
+  }
+  #he {
+    display: none;
+  }
+  .icon img {
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+  #menu {
+    font-size: 16px;
+    padding: 13px;
+    border-radius: 50%;
+    transition: 0.5s;
+    display: block;
+    margin-left: 20px;
+  }
+  #menu1 {
+    font-size: 16px;
+    padding: 13px;
+    border-radius: 50%;
+    transition: 0.5s;
+    display: block;
+    margin-left: 20px;
+  }
+  .icon img:hover {
+    background-color: rgb(75, 75, 75);
+  }
+  #menu:hover {
+    background-color: rgb(75, 75, 75);
+  }
+  #menu1:hover {
+    background-color: rgb(75, 75, 75);
+  }
+
+  .image1 {
+    height: 300px;
+    background-image: url(pic1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 300px;
+    position: relative;
+  }
+  .para1 {
+    position: absolute;
+    top: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    color: rgb(34, 34, 34);
+  }
+  .dtop {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .btn {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  button {
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-weight: 700;
+    font-style: bolder;
+    cursor: pointer;
+    background-color: rgb(209, 204, 204);
+    border-style: none;
+  }
+
+  .image2 {
+    height: 375px;
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .j1 {
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+  .j2 {
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+  .j3 {
+    padding-top: 20px;
+    height: 85px;
+    cursor: pointer;
+  }
+
+  .image3 {
+    padding: 0 100px;
+    height: 250px;
+    width: 100%;
+    background-image: url(pic2.webp);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 350px;
+    position: relative;
+  }
+  .para2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    color: rgb(34, 34, 34);
+    position: absolute;
+    top: 380px;
+  }
+  .image4 {
+    height: 350px;
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    font-size: 14px;
+  }
+
+  .rshoe {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .sh {
+    height: 150px;
+  }
+
+  .shoe {
+    margin: 20px;
+    font-size: 12px;
+  }
+  .pp {
+    display: flex;
+    align-items: flex-start;
+
+    justify-content: space-between;
+    padding: 10px 2px;
+  }
+
+  .image5 {
+    padding: 0 0;
+    height: 375px;
+    width: 100%;
+    background-image: url(pic3.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 300px;
+    position: relative;
+  }
+  .para4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    color: rgb(31, 31, 31);
+    position: absolute;
+    top: 360;
+  }
+  .im5 {
+    padding-bottom: 20px;
+  }
+  .btn1 {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .image6 {
+    padding: 0 0px;
+    height:375px;
+    width: 100%;
+    background-image: url(pic4.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 300px;
+    position: relative;
+  }
+  .k1 {
+    padding-bottom: 20px;
+  }
+  .k2 {
+    padding-bottom: 5px;
+  }
+  .k3 {
+    padding-bottom: 10px;
+  }
+  .para6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    color: rgb(34, 34, 34);
+    position: absolute;
+    top: 360px;
+  }
+
+  .image7 {
+    position: relative;
+    padding: 0 100px;
+    height: 375px;
+    width: 100%;
+    background-image: url(pic5.webp);
+    background-position: top;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .image8 {
+    height: 350px;
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    font-size: 14px;
+  }
+
+  .rshoe {
+    display: flex;
+    align-items: flex-start;
+
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .sh {
+    height: 150px;
+  }
+
+  .shoe {
+    margin-right: 20px;
+    font-size: 12px;
+  }
+  .pp {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .image10 {
+    padding: 0 0px;
+    height: 375px;
+    width: 100%;
+    background-image: url(pic4.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 250px;
+    position: relative;
+  }
+  .para10 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    color: rgb(34, 34, 34);
+    position: absolute;
+    top: 420px;
+  }
+
+  .v1 {
+    font-size: 28px;
+    padding-bottom: 10px;
+  }
+  .v2 {
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+
+  .image9 {
+    height: 400px;
+    width: 100%;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  .rshoe {
+    padding-left: 20px;
+    height: 350px;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    overflow: scroll;
+
+    
+  }
+  
+  .sh {
+    height: 150px;
+  }
+  .shoe {
+    margin: 10px;
+
+    position: relative;
+  
+  }
+ 
+  
+  .pp {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+  .footer {
+    height: 700px;
+    width: 100%;
+    background-color: #181818;
+    font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .fb {
+    height: 40%;
+    width: 100%;
+    color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    text-decoration: none;
+    padding-right: 0px;
+  }
+  .med {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+  }
+  h3 {
+    color: white;
+  }
+  .med1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+    cursor: pointer;
+  }
+  .f1 {
+    width: 100%;
+    margin-top: 50px;
+  }
+  #nn {
+    display: none;
+  }
+  #nb {
+    display: none;
+  }
+  .f1.a {
+    margin-left: 60px;
+  }
+  .f1.aaaa {
+    display: flex;
+  }
+  .ll {
+    display: none;
+  }
+
+  li {
+    list-style: none;
+    padding: 5px 0;
+    font-weight: 300;
+    color: #b1b1b1;
+    cursor: pointer;
+  }
+  li:hover {
+    color: white;
+  }
+
+  li h3 {
+    color: white;
+    font-size: 20px;
+  }
+
+  #nn {
+    transition: 0.5s;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+  }
+  #nn:hover {
+    background-color: #7e7e7e;
+  }
+  #nb {
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-left: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  #nb:hover {
+    border: 1px solid white;
+  }
+  .id {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #india1 {
+    display: block;
+    border-radius: 3px;
+    border: 1px solid grey;
+    padding: 0 15%;
+    cursor: pointer;
+  }
+
+  #india {
+    display: none;
+  }
+  #india:hover {
+    border: 1px solid white;
+  }
+  .oo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+  }
+  .ooo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(173, 173, 173);
+    font-size: 12px;
+    padding: 20px 0px;
+
+  }
+}
+
+@media (max-width: 400px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .nav1 {
+    height: 44px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: rgb(43, 43, 43);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Noto Sans", sans-serif;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 500;
+  }
+  .nav2 {
+    height: 80px;
+    width: 100%;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: "Noto Sans", sans-serif;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .logo img {
+    height: 30px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .search {
+    width: 135px;
+    position: absolute;
+    left: 0px;
+    padding: 1px 2px;
+    border-radius: 2px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .search:hover {
+    border: none;
+  }
+
+  i {
+    color: white;
+
+    font-size: 14px;
+  }
+
+  .searchpara {
+    display: none;
+  }
+
+  .icon {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: 140px;
+  }
+  #he {
+    display: none;
+  }
+  .icon img {
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+  #menu {
+    font-size: 16px;
+    padding: 13px;
+    border-radius: 50%;
+    transition: 0.5s;
+    display: block;
+    margin-left: 10px;
+  }
+  #menu1 {
+    font-size: 16px;
+    padding: 13px;
+    border-radius: 50%;
+    transition: 0.5s;
+    display: block;
+    margin-left: 10px;
+  }
+  .icon img:hover {
+    background-color: rgb(75, 75, 75);
+  }
+  #menu:hover {
+    background-color: rgb(75, 75, 75);
+  }
+  #menu1:hover {
+    background-color: rgb(75, 75, 75);
+  }
+
+  .image1 {
+    height: 300px;
+    background-image: url(pic1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 270px;
+    position: relative;
+  }
+  .para1 {
+    position: absolute;
+    top: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    color: rgb(34, 34, 34);
+  }
+  .dtop {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .btn {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .image2 {
+    height: 300px;
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .j1 {
+    padding-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .j2 {
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  .j3 {
+    padding-top: 20px;
+    height: 78px;
+    cursor: pointer;
+  }
+
+  .image3 {
+    padding: 0 100px;
+    height: 250px;
+    width: 100%;
+    background-image: url(pic2.webp);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 300px;
+    position: relative;
+  }
+  .para2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    color: rgb(34, 34, 34);
+    position: absolute;
+    top: 340px;
+  }
+  .image4 {
+    height: 350px;
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 14px;
+  }
+
+  .rshoe {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    overflow-x: scroll;
+
+  }
+  .sh {
+    height: 150px;
+  }
+
+  .shoe {
+    margin: 20px;
+    font-size: 12px;
+  }
+  .pp {
+    display: flex;
+    align-items: flex-start;
+
+    justify-content: space-between;
+    padding: 5px 2px;
+  }
+
+  .image5 {
+    padding: 0 0;
+    height: 250px;
+    width: 100%;
+    background-image: url(pic2.webp);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 310px;
+    position: relative;
+  }
+  .para4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    color: rgb(34, 34, 34);
+    position: absolute;
+    top: 250px;
+  }
+  .im5 {
+    padding-bottom: 20px;
+  }
+  .btn1 {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .image6 {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-image: url(pic4.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 300px;
+  }
+  .k1 {
+    font-size: 28px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .k2 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 2px;
+  }
+  .k3 {
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 5px;
+  }
+
+  .para6 {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans", sans-serif;
+    color: rgb(34, 34, 34);
+    position: absolute;
+    top: 300px;
+  }
+
+  .image7 {
+    height: 375px;
+    width: 100%;
+    background-image: url(pic5.webp);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+  }
+  .image8 {
+    height: 375px;
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 14px;
+
+  }
+
+  .rshoe {
+    display: flex;
+    align-items: flex-start;
+    overflow-x: scroll;
+
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .sh {
+    height: 150px;
+  }
+
+  .shoe {
+    margin-right: 20px;
+    font-size: 12px;
+  }
+  .pp {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .image10 {
+    padding: 0 100px;
+    height:375px;
+    width: 100%;
+    background-image: url(pic4.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 300px;
+    position: relative;
+  }
+  .para10 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+    color: rgb(34, 34, 34);
+    position: absolute;
+    top: 450px;
+  }
+
+  .v1 {
+    font-size: 28px;
+    padding-bottom: 10px;
+  }
+  .v2 {
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+
+  .image9 {
+    height: 350px;
+    width: 100%;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  .rshoe {
+    padding-left: 20px;
+    height: 280px;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    overflow: scroll;
+
+    
+  }
+  
+  .sh {
+    height: 150px;
+  }
+  .shoe {
+    margin: 10px;
+
+    position: relative;
+  
+  }
+ 
+  
+  .pp {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  .footer {
+    height: 650px;
+    width: 100%;
+    background-color: #181818;
+    margin-top: 80px;
+    font-family: "Noto Sans", sans-serif;
+  }
+
+  .fb {
+    height: 80%;
+    width: 100%;
+    color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    text-decoration: none;
+    padding-right: 100px;
+  }
+  .med {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+  }
+  h3 {
+    color: white;
+  }
+  .med1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+    cursor: pointer;
+  }
+  .f1 {
+    width: 100%;
+    margin-top: 50px;
+  }
+  #nn {
+    display: none;
+  }
+  #nb {
+    display: none;
+  }
+  .f1.a {
+    margin-left: 60px;
+  }
+  .f1.aaaa {
+    display: flex;
+  }
+  .ll {
+    display: none;
+  }
+
+  li {
+    list-style: none;
+    padding: 5px 0;
+    font-weight: 300;
+    color: #b1b1b1;
+    cursor: pointer;
+  }
+  li:hover {
+    color: white;
+  }
+
+  li h3 {
+    color: white;
+    font-size: 20px;
+  }
+
+  #nn {
+    transition: 0.5s;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+  }
+  #nn:hover {
+    background-color: #7e7e7e;
+  }
+  #nb {
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-left: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  #nb:hover {
+    border: 1px solid white;
+  }
+  .id {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #india1 {
+    display: block;
+    border-radius: 3px;
+    border: 1px solid grey;
+    padding: 0 15%;
+    cursor: pointer;
+  }
+
+  #india {
+    display: none;
+  }
+  #india:hover {
+    border: 1px solid white;
+  }
+  .oo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+  }
+  .ooo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(173, 173, 173);
+    font-size: 12px;
+  }
+}
